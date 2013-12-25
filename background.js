@@ -7,8 +7,8 @@ chrome.browserAction.onClicked.addListener(function(tab) {
                     chrome.browserAction.getTitle({tabId: tab.id}, function (tabTitle){
                         var initalState = (tabTitle === "Link Finder");
                         var newImage = initalState ?
-                                        "Icons/LogoSmall19.png" :
-                                        "Icons/LogoSmallEmpty19.png";
+                                        "Icons/LogoSmallEmpty19.png" :
+                                        "Icons/LogoSmall19.png";
                         var newTitle = initalState ?
                                         "Clear Links" :
                                         "Link Finder";
